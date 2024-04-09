@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 77932537}
   - component: {fileID: 77932539}
   - component: {fileID: 77932538}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 312860993}
   - component: {fileID: 312860992}
   - component: {fileID: 312860991}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonCredits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ RectTransform:
   m_Children:
   - {fileID: 1685221403}
   m_Father: {fileID: 1317809994}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 464974920}
   - component: {fileID: 464974919}
   - component: {fileID: 464974918}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonQuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ RectTransform:
   m_Children:
   - {fileID: 1841726545}
   m_Father: {fileID: 1317809994}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 493353566}
   - component: {fileID: 493353565}
   - component: {fileID: 493353564}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 493353565}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1317809993}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1614401287}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &493353565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -718,7 +742,7 @@ GameObject:
   - component: {fileID: 1057744440}
   - component: {fileID: 1057744442}
   - component: {fileID: 1057744441}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,9 +958,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1983443319}
-  - {fileID: 1317809994}
   - {fileID: 1614401288}
+  - {fileID: 1317809994}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -954,7 +977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1317809994}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -973,6 +996,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1983443319}
   - {fileID: 1906163233}
   - {fileID: 2060069307}
   - {fileID: 312860990}
@@ -996,13 +1020,13 @@ GameObject:
   - component: {fileID: 1614401288}
   - component: {fileID: 1614401290}
   - component: {fileID: 1614401289}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: LevelsMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1614401288
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1017,7 +1041,7 @@ RectTransform:
   m_Children:
   - {fileID: 493353563}
   m_Father: {fileID: 1114586759}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1073,7 +1097,7 @@ GameObject:
   - component: {fileID: 1685221403}
   - component: {fileID: 1685221405}
   - component: {fileID: 1685221404}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1276,7 +1300,7 @@ GameObject:
   - component: {fileID: 1841726545}
   - component: {fileID: 1841726547}
   - component: {fileID: 1841726546}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1412,7 +1436,7 @@ GameObject:
   - component: {fileID: 1906163236}
   - component: {fileID: 1906163235}
   - component: {fileID: 1906163234}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonLevels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1433,7 +1457,7 @@ RectTransform:
   m_Children:
   - {fileID: 1057744440}
   m_Father: {fileID: 1317809994}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1496,18 +1520,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1983443318}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1614401287}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1518,7 +1530,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1906163235
 MonoBehaviour:
@@ -1570,7 +1582,7 @@ GameObject:
   - component: {fileID: 1983443321}
   - component: {fileID: 1983443320}
   m_Layer: 5
-  m_Name: Background
+  m_Name: MainMenuBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1583,18 +1595,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983443318}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1114586759}
+  m_Father: {fileID: 1317809994}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7, y: 87}
-  m_SizeDelta: {x: 58, y: 920}
+  m_AnchoredPosition: {x: -3, y: -94}
+  m_SizeDelta: {x: 1678, y: 1550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1983443320
 MonoBehaviour:
@@ -1646,7 +1658,7 @@ GameObject:
   - component: {fileID: 2060069310}
   - component: {fileID: 2060069309}
   - component: {fileID: 2060069308}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ButtonOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1679,7 @@ RectTransform:
   m_Children:
   - {fileID: 77932537}
   m_Father: {fileID: 1317809994}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
